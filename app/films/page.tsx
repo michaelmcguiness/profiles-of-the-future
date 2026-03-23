@@ -14,7 +14,7 @@ const films = [
     issue: "001",
     title: "Anduril: The Future of War",
     description:
-      "Inside Anduril's mission to transform American defense — from a surveillance tower on a Texas ranch to a $20 billion Army contract. Featuring Palmer Luckey, Trae Stephens, and Katherine Boyle.",
+      "Inside Anduril's mission to transform American defense — from a surveillance tower on a Texas ranch to a $20 billion Army contract.",
     duration: "38 min",
     date: "March 2026",
     image: "/images/001/fury.webp",
@@ -109,7 +109,7 @@ export default function Films() {
           <span
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: 10,
+              fontSize: 14,
               fontWeight: 500,
               letterSpacing: "0.15em",
               textTransform: "uppercase",
@@ -132,7 +132,7 @@ export default function Films() {
               href={item.href}
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: 400,
                 letterSpacing: "0.08em",
                 color:
@@ -165,7 +165,7 @@ export default function Films() {
             <span
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 10,
+                fontSize: 14,
                 fontWeight: 600,
                 letterSpacing: "0.3em",
                 textTransform: "uppercase",
@@ -190,9 +190,9 @@ export default function Films() {
           <p
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: 19,
+              fontSize: 21,
               lineHeight: 1.7,
-              color: "rgba(232,228,222,0.5)",
+              color: "rgba(232,228,222,0.65)",
               fontStyle: "italic",
               maxWidth: 540,
               marginTop: 24,
@@ -294,7 +294,7 @@ export default function Films() {
                     <span
                       style={{
                         fontFamily: "'DM Sans', sans-serif",
-                        fontSize: 10,
+                        fontSize: 14,
                         fontWeight: 600,
                         letterSpacing: "0.2em",
                         textTransform: "uppercase",
@@ -311,7 +311,7 @@ export default function Films() {
               <span
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 10,
+                  fontSize: 14,
                   letterSpacing: "0.25em",
                   textTransform: "uppercase",
                   color: "#c4956a",
@@ -336,9 +336,9 @@ export default function Films() {
               <p
                 style={{
                   fontFamily: "'Cormorant Garamond', Georgia, serif",
-                  fontSize: 16,
+                  fontSize: 18,
                   lineHeight: 1.65,
-                  color: "rgba(232,228,222,0.4)",
+                  color: "rgba(232,228,222,0.65)",
                   margin: "0 0 16px",
                   maxWidth: 560,
                 }}
@@ -348,8 +348,8 @@ export default function Films() {
               <span
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 11,
-                  color: "rgba(232,228,222,0.25)",
+                  fontSize: 13,
+                  color: "rgba(232,228,222,0.65)",
                 }}
               >
                 {film.status === "available"
@@ -374,7 +374,7 @@ export default function Films() {
             href="/"
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: 12,
+              fontSize: 14,
               fontWeight: 500,
               letterSpacing: "0.15em",
               textTransform: "uppercase",

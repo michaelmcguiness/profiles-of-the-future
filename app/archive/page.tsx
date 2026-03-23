@@ -116,7 +116,7 @@ export default function Archive() {
           <span
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: 10,
+              fontSize: 14,
               fontWeight: 500,
               letterSpacing: "0.15em",
               textTransform: "uppercase",
@@ -139,10 +139,10 @@ export default function Archive() {
               href={item.href}
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: 400,
                 letterSpacing: "0.08em",
-                color: "rgba(232,228,222,0.4)",
+                color: "rgba(232,228,222,0.65)",
                 cursor: "pointer",
                 transition: "color 0.3s ease",
                 textDecoration: "none",
@@ -169,7 +169,7 @@ export default function Archive() {
             <span
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 10,
+                fontSize: 14,
                 fontWeight: 600,
                 letterSpacing: "0.3em",
                 textTransform: "uppercase",
@@ -257,7 +257,7 @@ export default function Archive() {
                 <span
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 10,
+                    fontSize: 14,
                     letterSpacing: "0.25em",
                     textTransform: "uppercase",
                     color: "#c4956a",
@@ -282,9 +282,9 @@ export default function Archive() {
                 <p
                   style={{
                     fontFamily: "'Cormorant Garamond', Georgia, serif",
-                    fontSize: 15,
+                    fontSize: 17,
                     lineHeight: 1.6,
-                    color: "rgba(232,228,222,0.4)",
+                    color: "rgba(232,228,222,0.65)",
                     margin: "0 0 16px",
                   }}
                 >
@@ -301,9 +301,9 @@ export default function Archive() {
                   <span
                     style={{
                       fontFamily: "'DM Sans', sans-serif",
-                      fontSize: 10,
+                      fontSize: 14,
                       letterSpacing: "0.1em",
-                      color: "rgba(232,228,222,0.2)",
+                      color: "rgba(232,228,222,0.65)",
                     }}
                   >
                     {item.vertical}
@@ -319,8 +319,8 @@ export default function Archive() {
                   <span
                     style={{
                       fontFamily: "'DM Sans', sans-serif",
-                      fontSize: 10,
-                      color: "rgba(232,228,222,0.2)",
+                      fontSize: 14,
+                      color: "rgba(232,228,222,0.65)",
                     }}
                   >
                     {item.date}
@@ -346,7 +346,7 @@ export default function Archive() {
             href="/"
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: 12,
+              fontSize: 14,
               fontWeight: 500,
               letterSpacing: "0.15em",
               textTransform: "uppercase",

@@ -100,7 +100,7 @@ export default function ProfilesLanding() {
           <span
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: 10,
+              fontSize: 14,
               fontWeight: 500,
               letterSpacing: "0.15em",
               textTransform: "uppercase",
@@ -124,10 +124,10 @@ export default function ProfilesLanding() {
               href={item.href}
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: 400,
                 letterSpacing: "0.08em",
-                color: "rgba(232,228,222,0.4)",
+                color: "rgba(232,228,222,0.65)",
                 cursor: "pointer",
                 transition: "color 0.3s ease",
                 textDecoration: "none",
@@ -164,7 +164,7 @@ export default function ProfilesLanding() {
             <span
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 10,
+                fontSize: 14,
                 fontWeight: 600,
                 letterSpacing: "0.3em",
                 textTransform: "uppercase",
@@ -183,11 +183,11 @@ export default function ProfilesLanding() {
             <span
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 10,
+                fontSize: 14,
                 fontWeight: 400,
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
-                color: "rgba(232,228,222,0.3)",
+                color: "rgba(232,228,222,0.65)",
               }}
             >
               Defense · American Dynamism
@@ -205,9 +205,9 @@ export default function ProfilesLanding() {
             <span
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: 400,
-                color: "rgba(232,228,222,0.5)",
+                color: "rgba(232,228,222,0.65)",
               }}
             >
               March 2026
@@ -223,31 +223,12 @@ export default function ProfilesLanding() {
             <span
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: 400,
-                color: "rgba(232,228,222,0.5)",
+                color: "rgba(232,228,222,0.65)",
               }}
             >
               18 min read
-            </span>
-            <span
-              style={{
-                width: 3,
-                height: 3,
-                borderRadius: "50%",
-                background: "rgba(232,228,222,0.2)",
-              }}
-            />
-            <span
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
-                fontWeight: 400,
-                color: "rgba(232,228,222,0.35)",
-                fontStyle: "italic",
-              }}
-            >
-              Featuring Palmer Luckey & Katherine Boyle
             </span>
           </div>
 
@@ -268,9 +249,9 @@ export default function ProfilesLanding() {
                 bottom: 16,
                 right: 20,
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 10,
+                fontSize: 14,
                 letterSpacing: "0.1em",
-                color: "rgba(232,228,222,0.3)",
+                color: "rgba(232,228,222,0.65)",
                 zIndex: 2,
               }}
             >
@@ -285,7 +266,7 @@ export default function ProfilesLanding() {
                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                 fontSize: 21,
                 lineHeight: 1.7,
-                color: "rgba(232,228,222,0.7)",
+                color: "rgba(232,228,222,0.9)",
                 margin: 0,
                 fontWeight: 400,
               }}
@@ -304,7 +285,7 @@ export default function ProfilesLanding() {
               href="/issues/001"
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: 500,
                 letterSpacing: "0.15em",
                 textTransform: "uppercase",
@@ -342,9 +323,9 @@ export default function ProfilesLanding() {
           <p
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: 17,
+              fontSize: 19,
               lineHeight: 1.7,
-              color: "rgba(232,228,222,0.4)",
+              color: "rgba(232,228,222,0.65)",
               fontStyle: "italic",
               margin: 0,
             }}
@@ -368,11 +349,11 @@ export default function ProfilesLanding() {
           <div
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: 10,
+              fontSize: 14,
               fontWeight: 600,
               letterSpacing: "0.3em",
               textTransform: "uppercase",
-              color: "rgba(232,228,222,0.25)",
+              color: "rgba(232,228,222,0.65)",
               marginBottom: 28,
             }}
           >
@@ -447,7 +428,7 @@ export default function ProfilesLanding() {
                   <span
                     style={{
                       fontFamily: "'DM Sans', sans-serif",
-                      fontSize: 10,
+                      fontSize: 14,
                       letterSpacing: "0.25em",
                       textTransform: "uppercase",
                       color:
@@ -475,7 +456,7 @@ export default function ProfilesLanding() {
                       fontFamily: "'Cormorant Garamond', Georgia, serif",
                       fontSize: 14,
                       lineHeight: 1.55,
-                      color: "rgba(232,228,222,0.3)",
+                      color: "rgba(232,228,222,0.65)",
                       margin: 0,
                       minHeight: 44,
                     }}
@@ -485,7 +466,7 @@ export default function ProfilesLanding() {
                   <span
                     style={{
                       fontFamily: "'DM Sans', sans-serif",
-                      fontSize: 10,
+                      fontSize: 14,
                       letterSpacing: "0.1em",
                       color: "rgba(232,228,222,0.15)",
                       marginTop: 4,
@@ -515,7 +496,7 @@ export default function ProfilesLanding() {
                 fontFamily: "'Cormorant Garamond', Georgia, serif",
                 fontSize: 28,
                 fontWeight: 400,
-                color: "rgba(232,228,222,0.7)",
+                color: "rgba(232,228,222,0.9)",
                 margin: 0,
                 marginBottom: 12,
                 lineHeight: 1.3,
@@ -529,7 +510,7 @@ export default function ProfilesLanding() {
               style={{
                 fontFamily: "'DM Sans', sans-serif",
                 fontSize: 13,
-                color: "rgba(232,228,222,0.3)",
+                color: "rgba(232,228,222,0.65)",
                 margin: 0,
                 marginBottom: 32,
               }}
@@ -554,7 +535,7 @@ export default function ProfilesLanding() {
           <span
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: 11,
+              fontSize: 13,
               color: "rgba(232,228,222,0.15)",
             }}
           >
@@ -563,7 +544,7 @@ export default function ProfilesLanding() {
           <span
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: 11,
+              fontSize: 13,
               color: "rgba(232,228,222,0.15)",
             }}
           >

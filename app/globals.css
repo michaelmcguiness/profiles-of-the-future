@@ -182,19 +182,19 @@ body {
 
 .article-body p {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 19px;
-  line-height: 1.8;
-  color: rgba(232, 228, 222, 0.72);
-  margin: 0 0 24px;
+  font-size: 22px;
+  line-height: 1.75;
+  color: rgba(232, 228, 222, 0.9);
+  margin: 0 0 28px;
   font-weight: 400;
 }
 
 .article-body h2 {
   font-family: 'Cormorant Garamond', Georgia, serif;
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 400;
   color: #e8e4de;
-  margin: 56px 0 24px;
+  margin: 56px 0 28px;
   letter-spacing: -0.01em;
   line-height: 1.2;
 }
@@ -204,7 +204,7 @@ body {
 }
 
 .article-body strong {
-  color: rgba(232, 228, 222, 0.85);
+  color: rgba(232, 228, 222, 0.9);
   font-weight: 600;
 }
 
@@ -220,9 +220,9 @@ body {
 
 .article-caption {
   font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.6;
-  color: rgba(232, 228, 222, 0.3);
+  color: rgba(232, 228, 222, 0.65);
   margin-top: 12px;
   font-style: italic;
 }
@@ -368,11 +368,11 @@ body {
   }
 
   .article-body p {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .article-body h2 {
-    font-size: 26px;
+    font-size: 28px;
     margin-top: 40px;
   }
 

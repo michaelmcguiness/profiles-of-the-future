@@ -14,7 +14,7 @@ const episodes = [
     issue: "001",
     title: "Palmer Luckey — Anduril and the Future of War",
     description:
-      "Palmer Luckey on founding Anduril, why the defense industrial base is broken, and how autonomous systems will reshape warfare. Featuring Katherine Boyle.",
+      "Palmer Luckey on founding Anduril, why the defense industrial base is broken, and how autonomous systems will reshape warfare.",
     duration: "1 hr 42 min",
     date: "March 2026",
     image: "/images/001/founders.webp",
@@ -109,7 +109,7 @@ export default function Podcast() {
           <span
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: 10,
+              fontSize: 14,
               fontWeight: 500,
               letterSpacing: "0.15em",
               textTransform: "uppercase",
@@ -132,7 +132,7 @@ export default function Podcast() {
               href={item.href}
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: 400,
                 letterSpacing: "0.08em",
                 color:
@@ -165,7 +165,7 @@ export default function Podcast() {
             <span
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 10,
+                fontSize: 14,
                 fontWeight: 600,
                 letterSpacing: "0.3em",
                 textTransform: "uppercase",
@@ -190,9 +190,9 @@ export default function Podcast() {
           <p
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: 19,
+              fontSize: 21,
               lineHeight: 1.7,
-              color: "rgba(232,228,222,0.5)",
+              color: "rgba(232,228,222,0.65)",
               fontStyle: "italic",
               maxWidth: 540,
               marginTop: 24,
@@ -265,7 +265,7 @@ export default function Podcast() {
                 <span
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 10,
+                    fontSize: 14,
                     letterSpacing: "0.25em",
                     textTransform: "uppercase",
                     color: "#c4956a",
@@ -290,9 +290,9 @@ export default function Podcast() {
                 <p
                   style={{
                     fontFamily: "'Cormorant Garamond', Georgia, serif",
-                    fontSize: 15,
+                    fontSize: 17,
                     lineHeight: 1.6,
-                    color: "rgba(232,228,222,0.4)",
+                    color: "rgba(232,228,222,0.65)",
                     margin: "0 0 16px",
                   }}
                 >
@@ -301,8 +301,8 @@ export default function Podcast() {
                 <span
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 11,
-                    color: "rgba(232,228,222,0.25)",
+                    fontSize: 13,
+                    color: "rgba(232,228,222,0.65)",
                   }}
                 >
                   {ep.status === "available"
@@ -328,7 +328,7 @@ export default function Podcast() {
             href="/"
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: 12,
+              fontSize: 14,
               fontWeight: 500,
               letterSpacing: "0.15em",
               textTransform: "uppercase",

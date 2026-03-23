@@ -61,7 +61,7 @@ export default function About() {
           <span
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: 10,
+              fontSize: 14,
               fontWeight: 500,
               letterSpacing: "0.15em",
               textTransform: "uppercase",
@@ -84,7 +84,7 @@ export default function About() {
               href={item.href}
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: 400,
                 letterSpacing: "0.08em",
                 color:
@@ -117,7 +117,7 @@ export default function About() {
             <span
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 10,
+                fontSize: 14,
                 fontWeight: 600,
                 letterSpacing: "0.3em",
                 textTransform: "uppercase",
@@ -288,7 +288,7 @@ export default function About() {
               <span
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 10,
+                  fontSize: 14,
                   fontWeight: 600,
                   letterSpacing: "0.25em",
                   textTransform: "uppercase",
@@ -302,7 +302,7 @@ export default function About() {
               <span
                 style={{
                   fontFamily: "'Cormorant Garamond', Georgia, serif",
-                  fontSize: 18,
+                  fontSize: 20,
                   fontWeight: 500,
                   color: "#e8e4de",
                   display: "block",
@@ -315,8 +315,8 @@ export default function About() {
               <span
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 12,
-                  color: "rgba(232,228,222,0.3)",
+                  fontSize: 14,
+                  color: "rgba(232,228,222,0.65)",
                 }}
               >
                 Browse the collection &rarr;
@@ -336,7 +336,7 @@ export default function About() {
               <span
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 10,
+                  fontSize: 14,
                   fontWeight: 600,
                   letterSpacing: "0.25em",
                   textTransform: "uppercase",
@@ -350,7 +350,7 @@ export default function About() {
               <span
                 style={{
                   fontFamily: "'Cormorant Garamond', Georgia, serif",
-                  fontSize: 18,
+                  fontSize: 20,
                   fontWeight: 500,
                   color: "#e8e4de",
                   display: "block",
@@ -363,8 +363,8 @@ export default function About() {
               <span
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 12,
-                  color: "rgba(232,228,222,0.3)",
+                  fontSize: 14,
+                  color: "rgba(232,228,222,0.65)",
                 }}
               >
                 Subscribe on YouTube &rarr;
@@ -384,7 +384,7 @@ export default function About() {
               <span
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 10,
+                  fontSize: 14,
                   fontWeight: 600,
                   letterSpacing: "0.25em",
                   textTransform: "uppercase",
@@ -398,7 +398,7 @@ export default function About() {
               <span
                 style={{
                   fontFamily: "'Cormorant Garamond', Georgia, serif",
-                  fontSize: 18,
+                  fontSize: 20,
                   fontWeight: 500,
                   color: "#e8e4de",
                   display: "block",
@@ -411,8 +411,8 @@ export default function About() {
               <span
                 style={{
                   fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 12,
-                  color: "rgba(232,228,222,0.3)",
+                  fontSize: 14,
+                  color: "rgba(232,228,222,0.65)",
                 }}
               >
                 Spotify · Apple Podcasts &rarr;
@@ -454,7 +454,7 @@ export default function About() {
             href="/"
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: 12,
+              fontSize: 14,
               fontWeight: 500,
               letterSpacing: "0.15em",
               textTransform: "uppercase",

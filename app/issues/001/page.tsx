@@ -82,7 +82,7 @@ export default function Article() {
           <span
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: 10,
+              fontSize: 14,
               fontWeight: 500,
               letterSpacing: "0.15em",
               textTransform: "uppercase",
@@ -105,10 +105,10 @@ export default function Article() {
               href={item.href}
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: 400,
                 letterSpacing: "0.08em",
-                color: "rgba(232,228,222,0.4)",
+                color: "rgba(232,228,222,0.65)",
                 cursor: "pointer",
                 transition: "color 0.3s ease",
                 textDecoration: "none",
@@ -137,7 +137,7 @@ export default function Article() {
             <span
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 10,
+                fontSize: 14,
                 fontWeight: 600,
                 letterSpacing: "0.3em",
                 textTransform: "uppercase",
@@ -156,11 +156,11 @@ export default function Article() {
             <span
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 10,
+                fontSize: 14,
                 fontWeight: 400,
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
-                color: "rgba(232,228,222,0.3)",
+                color: "rgba(232,228,222,0.65)",
               }}
             >
               Defense · American Dynamism
@@ -176,10 +176,10 @@ export default function Article() {
           <p
             style={{
               fontFamily: "'Cormorant Garamond', Georgia, serif",
-              fontSize: 19,
+              fontSize: 21,
               fontStyle: "italic",
               lineHeight: 1.6,
-              color: "rgba(232,228,222,0.45)",
+              color: "rgba(232,228,222,0.65)",
               margin: 0,
               marginBottom: 32,
               maxWidth: 620,
@@ -196,9 +196,9 @@ export default function Article() {
             <span
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: 400,
-                color: "rgba(232,228,222,0.5)",
+                color: "rgba(232,228,222,0.65)",
               }}
             >
               March 2026
@@ -214,31 +214,12 @@ export default function Article() {
             <span
               style={{
                 fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
+                fontSize: 14,
                 fontWeight: 400,
-                color: "rgba(232,228,222,0.5)",
+                color: "rgba(232,228,222,0.65)",
               }}
             >
               18 min read
-            </span>
-            <span
-              style={{
-                width: 3,
-                height: 3,
-                borderRadius: "50%",
-                background: "rgba(232,228,222,0.2)",
-              }}
-            />
-            <span
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
-                fontWeight: 400,
-                color: "rgba(232,228,222,0.35)",
-                fontStyle: "italic",
-              }}
-            >
-              Featuring Palmer Luckey & Katherine Boyle
             </span>
           </div>
         </header>
@@ -259,7 +240,7 @@ export default function Article() {
 
           <p>
             Everything Palmer Luckey has built was first described in science
-            fiction. Neal Stephenson&apos;s <em>Snow Crash</em> was published in
+            fiction. Neal Stephenson&apos;s <em>Snow Crash</em>{" "}was published in
             1992 — twenty years before a teenage Luckey assembled the first
             prototype of the Oculus Rift in a camper trailer parked in the
             driveway of his parents&apos; duplex in Long Beach, California.
@@ -272,7 +253,7 @@ export default function Article() {
             The company itself is named after Aragorn&apos;s sword in{" "}
             <em>The Lord of the Rings</em>, and in Tolkien&apos;s Elvish,
             Andúril means &ldquo;Flame of the West.&rdquo; Nine years ago,
-            Anduril didn&apos;t exist. A few weeks ago, the U.S. Army awarded
+            Anduril didn&apos;t exist. This year, the U.S. Army awarded
             the company a single contract worth up to $20 billion.
           </p>
           <p>This is the story of how it was built.</p>
@@ -1005,7 +986,7 @@ export default function Article() {
             href="/"
             style={{
               fontFamily: "'DM Sans', sans-serif",
-              fontSize: 12,
+              fontSize: 14,
               fontWeight: 500,
               letterSpacing: "0.15em",
               textTransform: "uppercase",

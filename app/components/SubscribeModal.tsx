@@ -66,7 +66,7 @@ export default function SubscribeModal() {
                 right: 16,
                 background: "none",
                 border: "none",
-                color: "rgba(232,228,222,0.3)",
+                color: "rgba(232,228,222,0.65)",
                 fontSize: 20,
                 cursor: "pointer",
                 fontFamily: "'DM Sans', sans-serif",
@@ -94,7 +94,7 @@ export default function SubscribeModal() {
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
                     fontSize: 13,
-                    color: "rgba(232,228,222,0.35)",
+                    color: "rgba(232,228,222,0.65)",
                     margin: "0 0 28px",
                     lineHeight: 1.5,
                   }}
@@ -172,7 +172,7 @@ export default function SubscribeModal() {
                   style={{
                     fontFamily: "'DM Sans', sans-serif",
                     fontSize: 13,
-                    color: "rgba(232,228,222,0.4)",
+                    color: "rgba(232,228,222,0.65)",
                     margin: 0,
                     lineHeight: 1.5,
                   }}
