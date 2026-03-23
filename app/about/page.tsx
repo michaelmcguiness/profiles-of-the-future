@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import SubscribeModal from "../components/SubscribeModal";
 
 export const metadata: Metadata = {
   title: "About — Profiles of the Future",
@@ -73,9 +75,9 @@ export default function About() {
         </div>
         <div className="nav-links">
           {[
-            { label: "Archive", href: "#" },
             { label: "About", href: "/about" },
-            { label: "Podcast", href: "#" },
+            { label: "Films", href: "/films" },
+            { label: "Podcast", href: "/podcast" },
           ].map((item) => (
             <Link
               key={item.label}
@@ -97,83 +99,344 @@ export default function About() {
               {item.label}
             </Link>
           ))}
-          <span
-            style={{
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: 11,
-              fontWeight: 500,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              color: "#0a0a0a",
-              background: "#c4956a",
-              padding: "8px 20px",
-              cursor: "pointer",
-            }}
-          >
-            Subscribe
-          </span>
+          <SubscribeModal />
         </div>
       </nav>
 
       {/* Content */}
       <article className="article-container">
         <header className="article-header">
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 16,
+              marginBottom: 32,
+            }}
+          >
+            <span
+              style={{
+                fontFamily: "'DM Sans', sans-serif",
+                fontSize: 10,
+                fontWeight: 600,
+                letterSpacing: "0.3em",
+                textTransform: "uppercase",
+                color: "#c4956a",
+              }}
+            >
+              About
+            </span>
+            <div
+              style={{
+                height: 1,
+                width: 48,
+                background: "linear-gradient(90deg, #c4956a, transparent)",
+              }}
+            />
+          </div>
           <h1 className="article-title">
-            About Profiles
+            An inquiry into the
             <br />
-            of the Future
+            companies building the future.
           </h1>
         </header>
 
         <div className="article-body">
+          {/* Lead statement */}
+          <p
+            style={{
+              fontSize: 22,
+              lineHeight: 1.7,
+              color: "rgba(232,228,222,0.85)",
+              borderLeft: "2px solid rgba(196, 149, 106, 0.3)",
+              paddingLeft: 28,
+              marginBottom: 48,
+            }}
+          >
+            Profiles of the Future is a publication by Andreessen Horowitz. Each
+            issue tells the story of one company reshaping civilization — how it
+            was built, how its founders think about what comes next, and where
+            the opportunities are for those who want to build alongside them.
+          </p>
+
+          {/* Clarke book image + origin story */}
+          <div
+            style={{
+              display: "flex",
+              gap: 48,
+              alignItems: "flex-start",
+              marginBottom: 56,
+              flexWrap: "wrap",
+            }}
+          >
+            <div
+              style={{
+                flex: "0 0 auto",
+                width: 200,
+                position: "relative",
+                boxShadow: "0 8px 40px rgba(0,0,0,0.5)",
+              }}
+            >
+              <Image
+                src="/images/clarke-profiles.jpg"
+                alt="Arthur C. Clarke — Profiles of the Future: An Inquiry into the Limits of the Possible (1962)"
+                width={200}
+                height={333}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  display: "block",
+                }}
+              />
+            </div>
+            <div style={{ flex: 1, minWidth: 280 }}>
+              <h2
+                style={{
+                  marginTop: 0,
+                }}
+              >
+                Where the name comes from
+              </h2>
+              <p>
+                In 1962, Arthur C. Clarke published{" "}
+                <em>
+                  Profiles of the Future: An Inquiry into the Limits of the
+                  Possible
+                </em>
+                . Clarke argued that the prophets who get the future wrong almost
+                always fail in one of two ways: <strong>failure of nerve</strong>{" "}
+                — accepting that something is possible but not believing anyone
+                will actually build it — and <strong>failure of imagination</strong>{" "}
+                — not seeing it coming at all.
+              </p>
+              <p>
+                His second law: &ldquo;The only way of discovering the limits of
+                the possible is to venture a little way past them into the
+                impossible.&rdquo;
+              </p>
+              <p>
+                Clarke profiled technologies. We profile the companies and
+                founders building them.
+              </p>
+            </div>
+          </div>
+
+          {/* Divider */}
+          <div
+            style={{
+              height: 1,
+              background:
+                "linear-gradient(90deg, rgba(232,228,222,0.08), rgba(196,149,106,0.12), rgba(232,228,222,0.08))",
+              margin: "48px 0",
+            }}
+          />
+
+          <h2>Why we write</h2>
+
           <p>
-            In 1962, Arthur C. Clarke published{" "}
-            <em>
-              Profiles of the Future: An Inquiry into the Limits of the Possible
-            </em>
-            . Clarke argued that the prophets who get the future wrong almost
-            always fail in one of two ways: failure of nerve (accepting that
-            something is possible but not believing anyone will actually build it)
-            and failure of imagination (not seeing it coming at all). His second law: &ldquo;The only way of discovering the
-            limits of the possible is to venture a little way past them into the
-            impossible.&rdquo;
+            These are a16z portfolio companies, and we backed them because we believe they matter.
+            Our general partners led the investments, work alongside the founders, and have
+            a front-row seat to how these companies are built. That gives us a unique perspective
+            to help tell their story.
           </p>
 
           <p>
-            Clarke profiled technologies. We profile the companies and founders
-            building them.
+            Each profile goes deep on a single company: the first product, the
+            first customer, the decisions that compounded, and the market map
+            that shows where the next generation of founders can build. We write
+            to help readers imagine a better future and to inspire founders to
+            go build it.
           </p>
 
-          <p>
-            Profiles of the Future continues Clarke&apos;s legacy for a new era
-            of builders. Each issue tells the story of one company reshaping
-            civilization — how it was built, how its founders think about what
-            comes next, and where the opportunities are for those who want to
-            build alongside them. We write to help readers imagine a better
-            future and to inspire founders to go build it.
-          </p>
+          {/* Divider */}
+          <div
+            style={{
+              height: 1,
+              background:
+                "linear-gradient(90deg, rgba(232,228,222,0.08), rgba(196,149,106,0.12), rgba(232,228,222,0.08))",
+              margin: "48px 0",
+            }}
+          />
+
+          <h2>Read, Watch & Listen</h2>
 
           <p>
-            We write with conviction because we invest with conviction. These are
-            a16z portfolio companies. We are not neutral observers — we back them
-            because we believe they matter, and we tell their stories because we
-            believe the best way to get more builders is to show what building
-            looks like.
+            Every profile is more than a written piece. Each issue comes with a
+            long-form article, an original short documentary, and a full-length
+            founder interview — because some stories are best seen and heard.
           </p>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr 1fr",
+              gap: 24,
+              margin: "32px 0",
+            }}
+          >
+            <Link
+              href="/archive"
+              style={{
+                border: "1px solid rgba(232,228,222,0.06)",
+                padding: "28px 24px",
+                textDecoration: "none",
+                color: "inherit",
+                background: "rgba(232,228,222,0.02)",
+                transition: "background 0.3s ease",
+              }}
+            >
+              <span
+                style={{
+                  fontFamily: "'DM Sans', sans-serif",
+                  fontSize: 10,
+                  fontWeight: 600,
+                  letterSpacing: "0.25em",
+                  textTransform: "uppercase",
+                  color: "#c4956a",
+                  display: "block",
+                  marginBottom: 12,
+                }}
+              >
+                Archive
+              </span>
+              <span
+                style={{
+                  fontFamily: "'Cormorant Garamond', Georgia, serif",
+                  fontSize: 18,
+                  fontWeight: 500,
+                  color: "#e8e4de",
+                  display: "block",
+                  marginBottom: 8,
+                  lineHeight: 1.3,
+                }}
+              >
+                All Issues
+              </span>
+              <span
+                style={{
+                  fontFamily: "'DM Sans', sans-serif",
+                  fontSize: 12,
+                  color: "rgba(232,228,222,0.3)",
+                }}
+              >
+                Browse the collection &rarr;
+              </span>
+            </Link>
+            <Link
+              href="/films"
+              style={{
+                border: "1px solid rgba(232,228,222,0.06)",
+                padding: "28px 24px",
+                textDecoration: "none",
+                color: "inherit",
+                background: "rgba(232,228,222,0.02)",
+                transition: "background 0.3s ease",
+              }}
+            >
+              <span
+                style={{
+                  fontFamily: "'DM Sans', sans-serif",
+                  fontSize: 10,
+                  fontWeight: 600,
+                  letterSpacing: "0.25em",
+                  textTransform: "uppercase",
+                  color: "#c4956a",
+                  display: "block",
+                  marginBottom: 12,
+                }}
+              >
+                Films
+              </span>
+              <span
+                style={{
+                  fontFamily: "'Cormorant Garamond', Georgia, serif",
+                  fontSize: 18,
+                  fontWeight: 500,
+                  color: "#e8e4de",
+                  display: "block",
+                  marginBottom: 8,
+                  lineHeight: 1.3,
+                }}
+              >
+                Original Documentaries
+              </span>
+              <span
+                style={{
+                  fontFamily: "'DM Sans', sans-serif",
+                  fontSize: 12,
+                  color: "rgba(232,228,222,0.3)",
+                }}
+              >
+                Subscribe on YouTube &rarr;
+              </span>
+            </Link>
+            <Link
+              href="/podcast"
+              style={{
+                border: "1px solid rgba(232,228,222,0.06)",
+                padding: "28px 24px",
+                textDecoration: "none",
+                color: "inherit",
+                background: "rgba(232,228,222,0.02)",
+                transition: "background 0.3s ease",
+              }}
+            >
+              <span
+                style={{
+                  fontFamily: "'DM Sans', sans-serif",
+                  fontSize: 10,
+                  fontWeight: 600,
+                  letterSpacing: "0.25em",
+                  textTransform: "uppercase",
+                  color: "#c4956a",
+                  display: "block",
+                  marginBottom: 12,
+                }}
+              >
+                Podcast
+              </span>
+              <span
+                style={{
+                  fontFamily: "'Cormorant Garamond', Georgia, serif",
+                  fontSize: 18,
+                  fontWeight: 500,
+                  color: "#e8e4de",
+                  display: "block",
+                  marginBottom: 8,
+                  lineHeight: 1.3,
+                }}
+              >
+                Founder Interviews
+              </span>
+              <span
+                style={{
+                  fontFamily: "'DM Sans', sans-serif",
+                  fontSize: 12,
+                  color: "rgba(232,228,222,0.3)",
+                }}
+              >
+                Spotify · Apple Podcasts &rarr;
+              </span>
+            </Link>
+          </div>
+
+          {/* Divider */}
+          <div
+            style={{
+              height: 1,
+              background:
+                "linear-gradient(90deg, rgba(232,228,222,0.08), rgba(196,149,106,0.12), rgba(232,228,222,0.08))",
+              margin: "48px 0",
+            }}
+          />
 
           <h2>About Andreessen Horowitz</h2>
 
           <p>
             Andreessen Horowitz (a16z) is a venture capital firm that backs bold
-            entrepreneurs building the future. Founded in 2009 by Marc Andreessen
-            and Ben Horowitz, the firm manages more than $40 billion across funds
-            investing in AI, bio and health, crypto, enterprise, fintech, games,
-            infrastructure, and American Dynamism — the category of companies
-            rebuilding the physical and institutional foundations of American
-            strength in defense, aerospace, energy, manufacturing, education, and
-            public safety. Marc wrote &ldquo;Why Software Is Eating the
-            World&rdquo; in 2011 and &ldquo;It&apos;s Time to Build&rdquo; in
-            2020. This publication is one answer to that call.
+            entrepreneurs building the future through technology. We invest in
+            every stage from seed to growth across AI, biotech, consumer, crypto,
+            enterprise, fintech, games, infrastructure, and American Dynamism.
           </p>
         </div>
 

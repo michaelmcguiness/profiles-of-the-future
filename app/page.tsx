@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import SubscribeModal from "./components/SubscribeModal";
 
 export default function ProfilesLanding() {
   const [loaded, setLoaded] = useState(false);
@@ -17,28 +18,31 @@ export default function ProfilesLanding() {
       issue: "002",
       title: "Hadrian and the New American Factory",
       subtitle:
-        "The U.S. would exhaust its missile inventory in eight days. Hadrian is building the manufacturing base that changes that math.",
-      vertical: "Aerospace · American Dynamism",
+        "AI-powered autonomous factories manufacturing precision aerospace and defense parts up to 10x faster — reindustrializing America one factory at a time.",
+      vertical: "Manufacturing · American Dynamism",
       status: "Coming April 2026",
       accent: "#4a7c9b",
+      image: "/images/002/hadrian-factory.webp",
     },
     {
       issue: "003",
       title: "Radiant and the Nuclear Renaissance",
       subtitle:
-        "From a compliance-first exchange to the financial rails of a programmable economy.",
-      vertical: "Crypto · Fintech",
+        "A portable microreactor that fits in a shipping container and replaces diesel generators with clean, meltdown-proof nuclear power — deployable anywhere by truck or aircraft.",
+      vertical: "Energy · American Dynamism",
       status: "Coming May 2026",
       accent: "#3d6bdb",
+      image: "/images/003/radiant-kaleidos.jpg",
     },
     {
       issue: "004",
-      title: "Mariana Minerals and the Critical Minerals Race",
+      title: "Mariana Minerals and the Critical Mineral Race",
       subtitle:
-        "",
-      vertical: "Manufacturing · American Dynamism",
-      status: "Coming May 2026",
+        "Software-first, AI-driven mining compressing a 12-year mine development timeline into a fraction — rebuilding America's critical mineral supply chains when energy, AI, and defense all depend on them.",
+      vertical: "Mining · American Dynamism",
+      status: "Coming June 2026",
       accent: "#8b6b3d",
+      image: "/images/004/mariana-minerals.jpg",
     },
   ];
 
@@ -111,7 +115,7 @@ export default function ProfilesLanding() {
         <div className="nav-links">
           {[
             { label: "About", href: "/about" },
-            { label: "Archive", href: "#" },
+            { label: "Archive", href: "/archive" },
             { label: "Films", href: "/films" },
             { label: "Podcast", href: "/podcast" },
           ].map((item) => (
@@ -132,21 +136,7 @@ export default function ProfilesLanding() {
               {item.label}
             </Link>
           ))}
-          <span
-            style={{
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: 11,
-              fontWeight: 500,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              color: "#0a0a0a",
-              background: "#c4956a",
-              padding: "8px 20px",
-              cursor: "pointer",
-            }}
-          >
-            Subscribe
-          </span>
+          <SubscribeModal />
         </div>
       </nav>
 
@@ -396,66 +386,114 @@ export default function ProfilesLanding() {
                 onMouseLeave={() => setHovered(null)}
                 style={{
                   background: hovered === i ? "#0f0f0f" : "#0a0a0a",
-                  padding: "36px 28px",
+                  padding: 0,
                   display: "flex",
                   flexDirection: "column",
-                  gap: 14,
                   cursor: "pointer",
                   transition: "background 0.4s ease",
                   borderTop: `2px solid ${
                     hovered === i ? item.accent : "transparent"
                   }`,
+                  overflow: "hidden",
                 }}
               >
-                <span
+                {/* Card image */}
+                <div
                   style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 10,
-                    letterSpacing: "0.25em",
-                    textTransform: "uppercase",
-                    color:
-                      hovered === i ? item.accent : "rgba(232,228,222,0.2)",
-                    transition: "color 0.3s ease",
+                    position: "relative",
+                    width: "100%",
+                    aspectRatio: "16 / 9",
+                    overflow: "hidden",
                   }}
                 >
-                  Issue {item.issue}
-                </span>
-                <span
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 367px"
+                    style={{
+                      objectFit: "cover",
+                      filter: hovered === i ? "brightness(0.8)" : "brightness(0.5)",
+                      transition: "filter 0.4s ease",
+                    }}
+                  />
+                  <div
+                    style={{
+                      position: "absolute",
+                      bottom: 10,
+                      left: 14,
+                      fontFamily: "'DM Sans', sans-serif",
+                      fontSize: 9,
+                      fontWeight: 600,
+                      letterSpacing: "0.2em",
+                      textTransform: "uppercase",
+                      color: "rgba(255,255,255,0.5)",
+                      background: "rgba(0,0,0,0.5)",
+                      padding: "4px 8px",
+                    }}
+                  >
+                    Coming Soon
+                  </div>
+                </div>
+                {/* Card content */}
+                <div
                   style={{
-                    fontFamily: "'Cormorant Garamond', Georgia, serif",
-                    fontSize: 23,
-                    fontWeight: 500,
-                    lineHeight: 1.25,
-                    color:
-                      hovered === i ? "#e8e4de" : "rgba(232,228,222,0.55)",
-                    transition: "color 0.3s ease",
+                    padding: "24px 28px 36px",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: 14,
                   }}
                 >
-                  {item.title}
-                </span>
-                <p
-                  style={{
-                    fontFamily: "'Cormorant Garamond', Georgia, serif",
-                    fontSize: 14,
-                    lineHeight: 1.55,
-                    color: "rgba(232,228,222,0.3)",
-                    margin: 0,
-                    minHeight: 44,
-                  }}
-                >
-                  {item.subtitle}
-                </p>
-                <span
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 10,
-                    letterSpacing: "0.1em",
-                    color: "rgba(232,228,222,0.15)",
-                    marginTop: 4,
-                  }}
-                >
-                  {item.vertical} · {item.status}
-                </span>
+                  <span
+                    style={{
+                      fontFamily: "'DM Sans', sans-serif",
+                      fontSize: 10,
+                      letterSpacing: "0.25em",
+                      textTransform: "uppercase",
+                      color:
+                        hovered === i ? item.accent : "rgba(232,228,222,0.2)",
+                      transition: "color 0.3s ease",
+                    }}
+                  >
+                    Issue {item.issue}
+                  </span>
+                  <span
+                    style={{
+                      fontFamily: "'Cormorant Garamond', Georgia, serif",
+                      fontSize: 23,
+                      fontWeight: 500,
+                      lineHeight: 1.25,
+                      color:
+                        hovered === i ? "#e8e4de" : "rgba(232,228,222,0.55)",
+                      transition: "color 0.3s ease",
+                    }}
+                  >
+                    {item.title}
+                  </span>
+                  <p
+                    style={{
+                      fontFamily: "'Cormorant Garamond', Georgia, serif",
+                      fontSize: 14,
+                      lineHeight: 1.55,
+                      color: "rgba(232,228,222,0.3)",
+                      margin: 0,
+                      minHeight: 44,
+                    }}
+                  >
+                    {item.subtitle}
+                  </p>
+                  <span
+                    style={{
+                      fontFamily: "'DM Sans', sans-serif",
+                      fontSize: 10,
+                      letterSpacing: "0.1em",
+                      color: "rgba(232,228,222,0.15)",
+                      marginTop: 4,
+                    }}
+                  >
+                    {item.vertical} · {item.status}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
@@ -483,9 +521,9 @@ export default function ProfilesLanding() {
                 lineHeight: 1.3,
               }}
             >
-              The companies building tomorrow,
+              An inquiry into the companies
               <br />
-              profiled today.
+              building the future.
             </p>
             <p
               style={{

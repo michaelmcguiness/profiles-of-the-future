@@ -8,7 +8,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Profiles of the Future — by a16z",
-  description: "The companies building tomorrow, profiled today.",
+  description: "An inquiry into the companies building the future.",
   metadataBase: new URL("https://profilesofthefuture.a16z.com"),
   openGraph: {
     siteName: "Profiles of the Future",

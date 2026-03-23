@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SubscribeModal from "../../components/SubscribeModal";
 
 export const metadata: Metadata = {
   title: "Anduril and the Future of War — Profiles of the Future",
@@ -95,9 +96,9 @@ export default function Article() {
         </div>
         <div className="nav-links">
           {[
-            { label: "Archive", href: "#" },
             { label: "About", href: "/about" },
-            { label: "Podcast", href: "#" },
+            { label: "Films", href: "/films" },
+            { label: "Podcast", href: "/podcast" },
           ].map((item) => (
             <Link
               key={item.label}
@@ -116,21 +117,7 @@ export default function Article() {
               {item.label}
             </Link>
           ))}
-          <span
-            style={{
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: 11,
-              fontWeight: 500,
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-              color: "#0a0a0a",
-              background: "#c4956a",
-              padding: "8px 20px",
-              cursor: "pointer",
-            }}
-          >
-            Subscribe
-          </span>
+          <SubscribeModal />
         </div>
       </nav>
 
