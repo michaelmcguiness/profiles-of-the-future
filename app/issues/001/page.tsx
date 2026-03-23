@@ -834,7 +834,7 @@ export default function Article() {
             and a growing list of allied nations – the &ldquo;prickly
             porcupines&rdquo; taking shape. In September 2019, drones attacked
             two major Saudi oil refineries, temporarily halving the
-            country&apos;s oil production – reminder that the threat of cheap,
+            country&apos;s oil production – a reminder that the threat of cheap,
             autonomous weapons isn&apos;t limited to the battlefield. Any
             facility that needs autonomous, 24/7 perimeter surveillance, from oil
             pipelines to nuclear power plants, is a potential Anduril customer.
@@ -860,7 +860,7 @@ export default function Article() {
             if you disagree with my decisions.&rdquo;
           </p>
           <p>
-            Unlike Google, Anduril&apos;s position is that it will build what the
+            Anduril&apos;s position is that it will build what the
             elected government asks for and let the democratic process set the
             boundaries. That position will be tested, and the founders who follow
             Anduril into defense should be prepared for that test.
@@ -905,13 +905,13 @@ export default function Article() {
             not to build another Anduril. It is to build what Anduril can&apos;t
             build alone – in autonomous systems, electronic warfare, directed
             energy, undersea vehicles, satellite constellations, and
-            manufacturing automation. The funding is there, from defense-focused
-            VCs, from the DoD&apos;s own startup programs, and from contracts
+            manufacturing automation. The funding is there: from defense-focused
+            VCs to the DoD&apos;s own startup programs to government contracts
             that are getting larger every year.
           </p>
           <p>The tactical lessons from Anduril&apos;s history:</p>
           <p>
-            <strong>Start with a real customer and a real product.</strong>{" "}
+            <strong>Start with a real customer and a real product. </strong>{" "}
             Anduril didn&apos;t try to win a fighter jet contract on day one.
             They started with a surveillance tower on a rancher&apos;s fence and
             let traction build the case. &ldquo;Don&apos;t be afraid to convince
@@ -921,7 +921,7 @@ export default function Article() {
             not. Execution is everything.&rdquo;
           </p>
           <p>
-            <strong>Wrap the software in metal.</strong> Trae Stephens learned
+            <strong>Wrap the software in metal. </strong> Trae Stephens learned
             early that the DoD has &ldquo;almost a moral aversion to paying
             software margins.&rdquo; But it will pay high prices for hardware.
             Anduril&apos;s real value is Lattice – the software – but it sells
@@ -931,24 +931,14 @@ export default function Article() {
             hardware makes it buyable.
           </p>
           <p>
-            <strong>Build the platform, not just the product.</strong> Every
+            <strong>Try to find opportunities that compound. </strong> Every
             product Anduril ships extends Lattice, and every extension makes
             every other product more valuable. Schimpf&apos;s mesh networking
             patent, built to solve a border surveillance problem, now runs inside
-            submarines and fighter jets. Try to find opportunities that compound.
+            submarines and fighter jets.
           </p>
           <p>
-            <strong>Let the product lead the sale.</strong> Gokul Subramanian,
-            Anduril&apos;s SVP of Space and Engineering, described the inversion:
-            &ldquo;Instead of a customer telling you what to do, you&apos;re
-            telling the customer what to do because you&apos;re putting software
-            in front of them that totally changes their opinion of where the
-            hardware should go.&rdquo; Traditional defense companies sell
-            programs, then build to order. Anduril builds, then sells what
-            works.
-          </p>
-          <p>
-            <strong>Give engineers ownership.</strong> Schimpf borrowed this from
+            <strong>Give engineers ownership. </strong> Schimpf borrowed this from
             Palantir and made it core to Anduril&apos;s culture: give young,
             ambitious engineers full ownership of outcomes. &ldquo;It&apos;s
             shitty work, but it&apos;s your shitty work,&rdquo; he told{" "}
@@ -960,7 +950,7 @@ export default function Article() {
             extremely rewarding.&rdquo;
           </p>
           <p>
-            <strong>Don&apos;t assume the best product wins.</strong>{" "}
+            <strong>Don&apos;t assume the best product wins. </strong>{" "}
             &ldquo;People want to believe that if you build the best thing, then
             you&apos;ll win,&rdquo; Luckey has said. &ldquo;That&apos;s not the
             way that the real world works.&rdquo; In its first few months,
