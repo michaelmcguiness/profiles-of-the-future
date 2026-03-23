@@ -124,6 +124,7 @@ export default function Films() {
         <div className="nav-links">
           {[
             { label: "About", href: "/about" },
+            { label: "Profiles", href: "/archive" },
             { label: "Films", href: "/films" },
             { label: "Podcast", href: "/podcast" },
           ].map((item) => (

@@ -4,7 +4,7 @@ import Link from "next/link";
 import SubscribeModal from "../components/SubscribeModal";
 
 export const metadata: Metadata = {
-  title: "Archive — Profiles of the Future",
+  title: "Profiles — Profiles of the Future",
   description: "Every issue of Profiles of the Future by a16z.",
 };
 
@@ -131,6 +131,7 @@ export default function Archive() {
         <div className="nav-links">
           {[
             { label: "About", href: "/about" },
+            { label: "Profiles", href: "/archive" },
             { label: "Films", href: "/films" },
             { label: "Podcast", href: "/podcast" },
           ].map((item) => (
@@ -176,7 +177,7 @@ export default function Archive() {
                 color: "#c4956a",
               }}
             >
-              Archive
+              Profiles
             </span>
             <div
               style={{

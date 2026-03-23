@@ -76,6 +76,7 @@ export default function About() {
         <div className="nav-links">
           {[
             { label: "About", href: "/about" },
+            { label: "Profiles", href: "/archive" },
             { label: "Films", href: "/films" },
             { label: "Podcast", href: "/podcast" },
           ].map((item) => (
@@ -297,7 +298,7 @@ export default function About() {
                   marginBottom: 12,
                 }}
               >
-                Archive
+                Profiles
               </span>
               <span
                 style={{

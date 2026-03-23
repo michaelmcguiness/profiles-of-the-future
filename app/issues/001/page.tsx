@@ -1,20 +1,23 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import SubscribeModal from "../../components/SubscribeModal";
 
 export const metadata: Metadata = {
   title: "Anduril and the Future of War — Profiles of the Future",
   description:
-    "Nine years ago, Anduril didn't exist. A few weeks ago, the U.S. Army awarded the company a single contract worth up to $20 billion. This is the story of how it was built.",
+    "Nine years ago, Anduril didn't exist. This year, the U.S. Army awarded the company a single contract worth up to $20 billion. This is the story of how it was built.",
   openGraph: {
     title: "Anduril and the Future of War",
     description:
-      "Nine years ago, Anduril didn't exist. A few weeks ago, the U.S. Army awarded the company a single contract worth up to $20 billion. This is the story of how it was built.",
+      "Nine years ago, Anduril didn't exist. This year, the U.S. Army awarded the company a single contract worth up to $20 billion. This is the story of how it was built.",
     type: "article",
     images: [
       {
-        url: "/images/001/roadrunner.webp",
-        alt: "A Roadrunner and Anduril founder Palmer Luckey",
+        url: "/images/001/og-fury.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Anduril Fury autonomous fighter jet",
       },
     ],
   },
@@ -22,8 +25,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Anduril and the Future of War",
     description:
-      "Nine years ago, Anduril didn't exist. A few weeks ago, the U.S. Army awarded the company a single contract worth up to $20 billion.",
-    images: ["/images/001/roadrunner.webp"],
+      "Nine years ago, Anduril didn't exist. This year, the U.S. Army awarded the company a single contract worth up to $20 billion.",
+    images: ["/images/001/og-fury.jpg"],
   },
 };
 
@@ -97,6 +100,7 @@ export default function Article() {
         <div className="nav-links">
           {[
             { label: "About", href: "/about" },
+            { label: "Profiles", href: "/archive" },
             { label: "Films", href: "/films" },
             { label: "Podcast", href: "/podcast" },
           ].map((item) => (
@@ -185,11 +189,9 @@ export default function Article() {
               maxWidth: 620,
             }}
           >
-            Profiles of the Future is a weekly series on the companies reshaping
-            civilization. Each profile tells the story of how they were built —
-            the first product, the first customer, the decisions that compounded
-            — and maps the opportunities opening up for the founders who want to
-            build with them.
+            Nine years ago, Anduril didn&apos;t exist. This year, the U.S. Army
+            awarded the company a single contract worth up to $20 billion. This
+            is the story of how it was built.
           </p>
 
           <div className="byline" style={{ marginBottom: 48 }}>
@@ -228,9 +230,11 @@ export default function Article() {
         <div className="article-body">
           {/* Hero image — Roadrunner + Palmer Luckey */}
           <figure className="article-figure">
-            <img
+            <Image
               src="/images/001/roadrunner.webp"
               alt="A Roadrunner and Anduril founder Palmer Luckey"
+              width={680}
+              height={453}
               className="article-image"
             />
             <figcaption className="article-caption">
@@ -240,18 +244,18 @@ export default function Article() {
 
           <p>
             Everything Palmer Luckey has built was first described in science
-            fiction. Neal Stephenson&apos;s <em>Snow Crash</em>{" "}was published in
-            1992 — twenty years before a teenage Luckey assembled the first
-            prototype of the Oculus Rift in a camper trailer parked in the
-            driveway of his parents&apos; duplex in Long Beach, California.
-            Lattice, the AI platform that coordinates every weapon Anduril makes,
-            was inspired by Laplace&apos;s demon: an 1814 thought experiment
-            about an intelligence that could predict the entire future of the
-            universe if it knew the position and velocity of every atom.
+            fiction. Neal Stephenson&apos;s <em>Snow Crash</em>{" "}was published
+            in 1992. Twenty years later, a teenage Luckey assembled the first
+            prototype of the Oculus Rift in a camper trailer parked in his
+            parents&apos; driveway. Lattice, the AI platform that coordinates
+            every weapon Anduril makes, was inspired by Laplace&apos;s demon
+            &ndash; an 1814 thought experiment about an intelligence that could
+            predict the entire future of the universe if it knew the position
+            and velocity of every atom.
           </p>
           <p>
             The company itself is named after Aragorn&apos;s sword in{" "}
-            <em>The Lord of the Rings</em>, and in Tolkien&apos;s Elvish,
+            <em>The Lord of the Rings</em>. In Tolkien&apos;s Elvish,
             Andúril means &ldquo;Flame of the West.&rdquo; Nine years ago,
             Anduril didn&apos;t exist. This year, the U.S. Army awarded
             the company a single contract worth up to $20 billion.
@@ -261,9 +265,9 @@ export default function Article() {
           <h2>America Doesn&apos;t Have Enough Stuff</h2>
           <p>
             Over decades, the American defense industrial base has calcified into
-            a system that produces fewer weapons at greater cost on longer
+            a system that produces fewer weapons, at greater cost, on longer
             timelines. The F-35 program started in 2001, has consumed over $400
-            billion, and didn&apos;t achieve full-rate production until 2024. The
+            billion and didn&apos;t achieve full-rate production until 2024. The
             Columbia-class submarine is years late and billions over budget. The
             Army&apos;s Future Combat Systems program burned through $18 billion
             before being canceled in 2009; its successor has been canceled and
@@ -301,9 +305,11 @@ export default function Article() {
 
           {/* Ford Highland Park plant */}
           <figure className="article-figure">
-            <img
+            <Image
               src="/images/001/tank.avif"
               alt="Workers at Ford's Highland Park plant assemble M10A1 tank destroyers in 1943"
+              width={680}
+              height={453}
               className="article-image"
             />
             <figcaption className="article-caption">
@@ -335,9 +341,11 @@ export default function Article() {
 
           {/* Founders photo */}
           <figure className="article-figure">
-            <img
+            <Image
               src="/images/001/founders.webp"
               alt="Anduril founders from left to right: Joseph Chen, Brian Schimpf, Palmer Luckey, Trae Stephens, Matt Grimm"
+              width={680}
+              height={453}
               className="article-image"
             />
             <figcaption className="article-caption">
@@ -348,7 +356,7 @@ export default function Article() {
 
           <p>
             As a kid, Palmer Luckey&apos;s hero was Seto Kaiba from{" "}
-            <em>Yu-Gi-Oh!</em> – an orphan who inherits a weapons manufacturing
+            <em>Yu-Gi-Oh! </em> – an orphan who inherits a weapons manufacturing
             empire and uses the money to build virtual reality games. He keeps a
             Kaiba figurine on his office mantel. Luckey&apos;s career followed
             the same arc in reverse: he built a virtual reality empire, then
@@ -383,8 +391,7 @@ export default function Article() {
             would become an Anduril co-founder – had been close friends since
             their undergraduate days at Cornell, where they built an autonomous
             vehicle together for the DARPA Grand Challenge and drove it through
-            the Mojave Desert in 2005, years before self-driving cars were a
-            Silicon Valley obsession. &ldquo;I was absolutely convinced from day
+            the Mojave Desert in 2005. &ldquo;I was absolutely convinced from day
             one that Brian needed to be the CEO of the company,&rdquo; Stephens
             would later say. &ldquo;There was no alternative.&rdquo;
           </p>
@@ -416,7 +423,7 @@ export default function Article() {
             agents sitting behind video screens with joysticks. It was easy to
             miss things and very manpower-intensive. Anduril&apos;s offer was
             different from anything CBP was used to hearing: Anduril would build
-            the system on its own dime, and CBP could test without committing
+            the system on its own dime, and CBP could test it without committing
             taxpayer money to a decade-long development program. &ldquo;The
             problem,&rdquo; Luckey has said, &ldquo;is that they say, &lsquo;How
             can we develop this product in such a way that congressmen can&apos;t
@@ -433,9 +440,11 @@ export default function Article() {
 
           {/* Sentry Tower */}
           <figure className="article-figure">
-            <img
+            <Image
               src="/images/001/towers.webp"
               alt="Anduril Sentry Tower"
+              width={680}
+              height={453}
               className="article-image"
             />
             <figcaption className="article-caption">
@@ -491,14 +500,16 @@ export default function Article() {
             presents options to the operator, Anvil launches to intercept. A
             tower spots movement, Ghost flies to investigate. All three products
             can be controlled with one interface and one operator. Each new
-            product made the other product more useful.
+            product made the others more useful.
           </p>
 
           {/* Ghost X */}
           <figure className="article-figure">
-            <img
+            <Image
               src="/images/001/ghost.webp"
               alt="The Anduril Ghost X"
+              width={680}
+              height={453}
               className="article-image"
             />
             <figcaption className="article-caption">
@@ -542,9 +553,11 @@ export default function Article() {
 
           {/* DIVE-LD submarine */}
           <figure className="article-figure">
-            <img
+            <Image
               src="/images/001/dive.jpg"
               alt="The DIVE-LD autonomous submarine"
+              width={680}
+              height={453}
               className="article-image"
             />
             <figcaption className="article-caption">
@@ -613,16 +626,21 @@ export default function Article() {
             fighters, missiles, and submarines. The name is a deliberate nod to
             the early 1940s, when Roosevelt called the American industrial base
             the &ldquo;Arsenal of Democracy&rdquo; and the country was building
-            a destroyer every four days. In eight years, the company went from
+            a destroyer every four days. 
+          </p>
+          <p>
+            In eight years, the company went from
             four towers on a rancher&apos;s fence to a $20 billion Army contract
             and a hyperscale defense manufacturing facility.
           </p>
 
           {/* Arsenal-1 */}
           <figure className="article-figure">
-            <img
+            <Image
               src="/images/001/arsenal.png"
               alt="Anduril's Arsenal-1 factory in Pickaway County, Ohio"
+              width={680}
+              height={453}
               className="article-image"
             />
             <figcaption className="article-caption">
@@ -633,12 +651,12 @@ export default function Article() {
 
           <h2>The Future of Warfare</h2>
           <p>
-            In 2003, the U.S. invaded Iraq with 130,000 troops, 800 tanks, and
-            squadrons of F-15s, F-16s, and B-2 bombers. The campaign cost over
-            $2 trillion. The vehicles were crewed. The munitions were dumb or
-            laser-guided. The intelligence came from satellites and human scouts.
-            It was, in most respects, a 20th-century war fought with
-            20th-century equipment.
+            In 2003, the U.S. invaded Iraq with more than 130,000 troops, hundreds 
+            of tanks, and squadrons of F-15s, F-16s, and B-2 bombers. The war cost 
+            over $2 trillion. The vehicles were crewed, the munitions were dumb or 
+            laser-guided, and the intelligence came from satellites and human scouts. 
+            It was, in most respects, a 20th-century war fought with 20th-century 
+            equipment.
           </p>
           <p>
             Twenty years later, the nature of warfare has changed beyond
@@ -673,9 +691,11 @@ export default function Article() {
 
           {/* Anvil */}
           <figure className="article-figure">
-            <img
+            <Image
               src="/images/001/anvil.webp"
               alt="Anduril's Anvil drone interceptor system"
+              width={680}
+              height={453}
               className="article-image"
             />
             <figcaption className="article-caption">
@@ -689,7 +709,7 @@ export default function Article() {
             described it first.
           </p>
           <p>
-            Heinlein&apos;s <em>Starship Troopers</em> imagined soldiers in
+            Heinlein&apos;s <em>Starship Troopers</em>{" "}imagined soldiers in
             powered armor that made them faster, stronger, and harder to kill
             than any unaugmented human. Where Heinlein augmented the body, Luckey
             is augmenting the senses. When Anduril took over the Army&apos;s
@@ -707,8 +727,7 @@ export default function Article() {
             connects every other Anduril system.
           </p>
           <p>
-            The Air Force&apos;s next program, Collaborative Combat Aircraft, is
-            what Luckey describes as &ldquo;loyal wingman.&rdquo; A pilot flies
+            Luckey calls the Air Force&apos;s Collaborative Combat Aircraft program &ldquo;loyal wingman.&rdquo; A pilot flies
             an F-35 with several autonomous Fury jets in formation. They carry
             the same sensors and weapons the pilot does, but they fly ahead as
             the front line. If the pilot needs to clear a corridor through enemy
@@ -721,9 +740,11 @@ export default function Article() {
 
           {/* Fury */}
           <figure className="article-figure">
-            <img
+            <Image
               src="/images/001/fury.webp"
               alt="The Fury unmanned fighter jet"
+              width={680}
+              height={453}
               className="article-image"
             />
             <figcaption className="article-caption">
@@ -736,7 +757,7 @@ export default function Article() {
             Beyond air and land, Luckey sees warfare expanding into domains most
             militaries haven&apos;t seriously planned for. He believes the
             earth&apos;s surface will eventually become too surveilled for
-            conventional operations. &ldquo;There&apos;s a lot more crust than
+            conventional operations, pushing conflict underground. &ldquo;There&apos;s a lot more crust than
             there is air or sea or surface of land,&rdquo; he argues. He also
             sees America&apos;s military presence in space evolving into
             something like <em>Star Trek</em>: &ldquo;doing exactly what the
@@ -748,7 +769,7 @@ export default function Article() {
           <p>
             &ldquo;I don&apos;t really want to be doing Anduril,&rdquo; Luckey
             confessed to Patrick O&apos;Shaughnessy on the{" "}
-            <em>Invest Like the Best</em> podcast. &ldquo;I would rather be
+            <em>Invest Like the Best</em>{" "}podcast. &ldquo;I would rather be
             making virtual reality headsets, video games, toys, fast cars,
             spaceships – that&apos;s what I want to be doing. I&apos;m doing
             what I&apos;m doing with Anduril because I think it&apos;s important
@@ -765,7 +786,7 @@ export default function Article() {
             was a different explanation. &ldquo;Tech companies refused to do any
             work with the United States military not because they thought it was
             unethical,&rdquo; he told Rick Rubin on the{" "}
-            <em>Tetragrammaton</em> podcast. &ldquo;It was a business decision.
+            <em>Tetragrammaton</em>{" "}podcast. &ldquo;It was a business decision.
             They said, &lsquo;I&apos;m not going to work with the US military
             because if I do, China won&apos;t let me make
             money.&rsquo;&rdquo; The employee protests gave executives cover to

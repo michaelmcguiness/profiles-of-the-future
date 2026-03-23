@@ -99,7 +99,7 @@ export default function SubscribeModal() {
                     lineHeight: 1.5,
                   }}
                 >
-                  One profile per month. Founder interviews, GP insights, and
+                  One profile per month. Founder interviews, partner perspectives, and
                   the opportunities they see ahead.
                 </p>
                 <div style={{ display: "flex", gap: 0 }}>

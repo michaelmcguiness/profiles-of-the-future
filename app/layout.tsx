@@ -14,9 +14,16 @@ export const metadata: Metadata = {
     siteName: "Profiles of the Future",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/images/og-logo.png",
+        alt: "Profiles of the Future — by a16z",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/og-logo.png"],
   },
 };
 

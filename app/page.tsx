@@ -115,7 +115,7 @@ export default function ProfilesLanding() {
         <div className="nav-links">
           {[
             { label: "About", href: "/about" },
-            { label: "Archive", href: "/archive" },
+            { label: "Profiles", href: "/archive" },
             { label: "Films", href: "/films" },
             { label: "Podcast", href: "/podcast" },
           ].map((item) => (
@@ -271,11 +271,9 @@ export default function ProfilesLanding() {
                 fontWeight: 400,
               }}
             >
-              In Pickaway County, Ohio, twenty-five miles south of Columbus,
-              there is a hangar that used to belong to the Air Force. It sits on
-              500 acres at the former Rickenbacker Air National Guard Base — two
-              12,000-foot runways, built during the Cold War for bombers that no
-              longer exist, maintained for cargo planes that still do.
+              Nine years ago, Anduril didn&apos;t exist. This year, the U.S.
+              Army awarded the company a single contract worth up to $20
+              billion. This is the story of how it was built.
             </p>
           </div>
 
@@ -454,7 +452,7 @@ export default function ProfilesLanding() {
                   <p
                     style={{
                       fontFamily: "'Cormorant Garamond', Georgia, serif",
-                      fontSize: 14,
+                      fontSize: 17,
                       lineHeight: 1.55,
                       color: "rgba(232,228,222,0.65)",
                       margin: 0,
@@ -515,7 +513,7 @@ export default function ProfilesLanding() {
                 marginBottom: 32,
               }}
             >
-              One profile per week. Founder interviews, GP insights, and the
+              One profile per month. Founder interviews, partner perspectives, and the
               opportunities they see ahead.
             </p>
             <div className="subscribe-form">
@@ -548,7 +546,7 @@ export default function ProfilesLanding() {
               color: "rgba(232,228,222,0.15)",
             }}
           >
-            An a16z New Media publication
+            An a16z publication
           </span>
         </div>
       </div>
