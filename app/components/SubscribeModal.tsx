@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { createPortal } from "react-dom";
 
 export default function SubscribeModal() {
   const [open, setOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function SubscribeModal() {
         Subscribe
       </button>
 
-      {open && (
+      {open && createPortal(
         <div
           onClick={() => setOpen(false)}
           style={{
@@ -182,7 +183,8 @@ export default function SubscribeModal() {
               </div>
             )}
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );

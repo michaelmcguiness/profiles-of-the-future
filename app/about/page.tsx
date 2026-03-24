@@ -268,10 +268,8 @@ export default function About() {
           </p>
 
           <div
+            className="cta-grid"
             style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr 1fr",
-              gap: 24,
               margin: "32px 0",
             }}
           >

@@ -112,6 +112,12 @@ body {
   background: rgba(232, 228, 222, 0.04);
 }
 
+.cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
 /* ── Subscribe CTA ── */
 .subscribe-box {
   border: 1px solid rgba(232, 228, 222, 0.06);
@@ -264,8 +270,8 @@ body {
   }
 
   .nav-brand span:last-child {
-    border-left: none;
-    padding-left: 0;
+    border-left: none !important;
+    padding-left: 0 !important;
   }
 
   .nav-links {
@@ -308,6 +314,10 @@ body {
   }
 
   .upcoming-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-grid {
     grid-template-columns: 1fr;
   }
 
